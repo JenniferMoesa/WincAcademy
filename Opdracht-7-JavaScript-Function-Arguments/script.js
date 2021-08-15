@@ -1,14 +1,13 @@
-const paintWall = function(item) {
-    console.log("The wall has been painted + item");
+const paintWall = function(color) {
+    console.log("The wall has been painted + color");
 
 }
+paintWall("green");
+paintWall("black");
 
-const paint_green = "green";
-const paint_black = "black";
-
-paintWall(paint_green);
-paintWall(paint_black);
-
-const chooseWall = function(item) {
-    console.log("The + item + has been painted")
+//choose wall
+const chooseWall = function(colorWall, color) {
+    console.log("The + item + has been painted" + color);
 }
+chooseWall("south-east", "purple");
+chooseWall("north", "yellow");
