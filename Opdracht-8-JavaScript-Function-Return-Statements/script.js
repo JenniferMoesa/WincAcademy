@@ -11,17 +11,16 @@ call the function with different numbers
 use console.log to display the return value of the function
 the end result of this exercise should not use console.log inside of the function*/
 
-function testGreaterThan(val) {
-    if (val > 100) {  // Change this line
+const testGreaterThan = function(num) {
+    if (num > 100) {
       return "True";
-    }
-  
-    else (val <= 100) ;{  // Change this line
+    } else {
       return "False";
     }
-  }
+  };
   
-  console.log(testGreaterThan(10)); // 10 or under
+  console.log(testGreaterThan(10)); // False
+
 
 /*
 Bouncer at a club
