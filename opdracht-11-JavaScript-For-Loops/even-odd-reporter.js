@@ -1,3 +1,11 @@
+for (let i = 0; i <= 20; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " is even");
+  } else {
+    console.log(i + " is oneven");
+  }
+}
+
 /*
 1. Even Odd Reporter
 Write a loop that iterates from 0 to 20. During each iteration, check whether the current number is even or odd.
