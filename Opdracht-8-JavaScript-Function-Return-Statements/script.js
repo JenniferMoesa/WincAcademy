@@ -112,6 +112,8 @@ const calculateAverage = function(
     return average;
 };
 
-console.log(calculateAverage(1, 1, 1, 1, 1)); // 1
-console.log(calculateAverage(1, 2, 3, 4, 5)); // 3
-console.log(calculateAverage(-10000, 0, 0, 0, 5000)); // -1000
+console.log(calculateAverage(5, 10, 15, 20, 25)); // 15
+console.log(calculateAverage(10, 20, 30, 40, 50)); // 30
+
+
+
