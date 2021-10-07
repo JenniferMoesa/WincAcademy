@@ -1,4 +1,4 @@
-/*Checking if a number is big
+/*CHECKING OF A NUMBER IS BIG
 We're going to write a function that checks if a number is bigger than 100.
 
 create a function that has one parameter (argument)
@@ -23,7 +23,7 @@ const testGreaterThan = function(num) {
 
 
 /*
-Bouncer at a club
+BOUNCER AT A CLUB
 We're going to create an "AI" bouncer: Brenda the Bouncer Bot.
 Brenda will check that there aren't to many people in the club.
 She will also check the age of the people wanting to enter the club. Brenda will return one of three sentences:
@@ -58,23 +58,26 @@ produce or calculate something
 do and produce something
 
   */
-
-function testGreaterThan(val) {
-    if (val > 100) {  // Change this line
-      return "it's too busy now, come back later";
+    
+    const reactionBouncer = function(
+    maxCustomer,
+    currentAmountCustomer,
+    ageCustomer
+) {
+    if (ageCustomer < 18) {
+        return "This is a club for adults";
     }
-  
-    if (val > 10) {  // Change this line
-      return "Over 10";
+
+    if (currentAmountCustomer >= maxCustomer) {
+        return "it's too busy now, come back later";
+    } else {
+        return "Come in";
     }
-  
-    return "10 or Under";
-  }
-  
-  console.log(testGreaterThan(10)); // 10 or under
+};
 
-
-
+console.log(reactionBouncer(100, 50, 17)); // maxCustomer, currentAmountCustomer, ageCustomer, This is a club for adults
+console.log(reactionBouncer(100, 60, 18)); // maxCustomer, currentAmountCustomer, ageCustomer, Come in
+console.log(reactionBouncer(100, 101, 18)); // "it's too busy now, come back later"
 
 
 
