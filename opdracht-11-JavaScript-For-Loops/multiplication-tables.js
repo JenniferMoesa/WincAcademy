@@ -1,3 +1,17 @@
+const multiplier = 9;
+for (let i = 0; i <= 10; i++) {
+  let result = multiplier * i;
+  console.log(multiplier + " * " + i + " = " + result);
+}
+
+// Bonus
+for (let multiplier = 0; multiplier <= 10; multiplier++) {
+  for (let i = 0; i <= 10; i++) {
+    let result = multiplier * i;
+    console.log(multiplier + " * " + i + " = " + result);
+  }
+}
+
 /*
 2. Multiplication tables
 We all know know them from elementary school: multiplication tables. Write a script that prints the multiplication table of 9. The output looks like this:
