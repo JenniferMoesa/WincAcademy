@@ -23,7 +23,7 @@ Gebruik de forEach array method, om alle items in je array te loggen naar de con
 
 const myColorArray = ["yellow", "blue", "red", "orange"];
 
-// oude manieren
+// OUDE STIJL
 let i = 0;
 while (i < myColorArray.length) {
   console.log(myColorArray[i]);
@@ -34,7 +34,7 @@ for (let i = 0; i < myColorArray.length; i++) {
   console.log(myColorArray[i]);
 }
 
-// nieuwe manier met forEach
+// NIEUWE STIJL MET FOREACH
 myColorArray.forEach((color) => console.log(color));
 
 
