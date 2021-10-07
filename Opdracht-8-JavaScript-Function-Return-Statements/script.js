@@ -1,4 +1,5 @@
 /*CHECKING OF A NUMBER IS BIG
+
 We're going to write a function that checks if a number is bigger than 100.
 
 create a function that has one parameter (argument)
@@ -24,6 +25,7 @@ const testGreaterThan = function(num) {
 
 /*
 BOUNCER AT A CLUB
+
 We're going to create an "AI" bouncer: Brenda the Bouncer Bot.
 Brenda will check that there aren't to many people in the club.
 She will also check the age of the people wanting to enter the club. Brenda will return one of three sentences:
@@ -81,8 +83,8 @@ console.log(reactionBouncer(100, 101, 18)); // "it's too busy now, come back lat
 
 
 
-/*
-Calculating the average
+/* CALCULATING THE AVERAGE
+
 We're going to write a function that calculates the average of five numbers.
 
 create a function with the right number of parameters
@@ -97,3 +99,19 @@ the end result of this exercise should not use console.log inside of the functio
 Now think about the categories of functions we discussed: functions that do something and functions that produce something.
 What kind of function is this?
 */
+
+const calculateAverage = function(
+    number1,
+    number2,
+    number3,
+    number4,
+    number5
+) {
+    const total = number1 + number2 + number3 + number4 + number5;
+    const average = total / 5;
+    return average;
+};
+
+console.log(calculateAverage(1, 1, 1, 1, 1)); // 1
+console.log(calculateAverage(1, 2, 3, 4, 5)); // 3
+console.log(calculateAverage(-10000, 0, 0, 0, 5000)); // -1000
