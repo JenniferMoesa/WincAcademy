@@ -14,20 +14,28 @@ For loop:
 Gebruik dezelfde array als startpunt.
 Schrijf een for loop die de kleuren in de console logged en stopt wanneer alle kleuren geprint zijn.
 Gebruik de lengte van de array in je for loop: array.length
+
+forEach:
+
+Gebruik dezelfde kleuren-array als startpunt
+Gebruik de forEach array method, om alle items in je array te loggen naar de console.
 */
 
-const colors = ["yellow", "blue", "red", "orange"];
+const myColorArray = ["yellow", "blue", "red", "orange"];
 
+// oude manieren
 let i = 0;
-while (i < colors.length) {
-  console.log(colors[i]);
+while (i < myColorArray.length) {
+  console.log(myColorArray[i]);
   i++;
 }
 
-for (let i = 0; i < colors.length; i++) {
-  console.log(colors[i]);
+for (let i = 0; i < myColorArray.length; i++) {
+  console.log(myColorArray[i]);
 }
 
+// nieuwe manier met forEach
+myColorArray.forEach((color) => console.log(color));
 
 
 const myColors = {
@@ -41,4 +49,3 @@ const myColors = {
 for (x in myColors) {
   console.log(myColors[x]);
 }
-
