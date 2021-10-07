@@ -1,5 +1,6 @@
 /*
-Hey kiddo
+HEY KIDDO
+
 We're going to write two functions, one that greets and another that checks if someone is an adult.
 
 create a function that has one parameter: the age
@@ -15,33 +16,67 @@ experiment so you're sure your function works
 --------------------------------------------------------------------------------------------------------------------
 */
 
+const eighteenOrOlder = function(age) {
+    if (age >= 18) {
+        return true; // return true if the age is >= 18
+    } else {
+        return false;  // false in all other cases
+    }
+};
+
+const greetings = function(age) {
+    if (eighteenOrOlder(age)) {
+        return "Hello there";
+    } else {
+        return "Hey kiddo";
+    }
+};
+
+console.log(greetings(20)); // "Hello there"
+console.log(greet(10)); // "Hey kiddo"
 
 
+/*
+VAT EXCERCISE 1
+Now let's write some code. First let's write a function that takes the base price and the VAT percentage and returns the price including VAT. 
+You must do the calculation of the VAT amount in a separate function.
+So, in the spirit of the lesson: we have a main function that does the main calculation and another function that we call from this main function.
+*/
 
+const calculateVat = function(baseRate, vatRate) {
+    return baseRate * (vatRate / 100); // returns the price including VAT
+};
 
+const rateIncludingVat = function(baseRate, vatRate) {
+    const vat = calculateVat(baseRate, vatRate);
+    return baseRate + vat;
+};
 
-
-
+console.log(rateIncludingVat(3000, 21)); // 3630
 
 
 
 /*
-VAT exercise 1
-Now let's write some code. First let's write a function that takes the base price and the VAT percentage and returns the price including VAT. 
-You must do the calculation of the VAT amount in a separate function.
-So, in the spirit of the lesson: we have a main function that does the main calculation and another function that we call from this main function.
-
-Make sure your functions work by testing them with different values and checking the result with a calculator or pen and paper.
-
-VAT exercise 2
+VAT EXCERCISE 2
 In this exercise we're going to calculate the base price and VAT amount.
 The main function you make should take the amount including VAT and the VAT percentage.
 The return value should be an array with two elements: base price and VAT amount.
-Again: make sure you use two functions, where the main one calls another function to do part of the calculation.
 */
 
 
+const calculateBasePrice = function(priceIncludingVAT, VATPercentage) {
+    const basePrice = priceIncludingVAT / ((100 + VATPercentage) / 100);
+    return basePrice;
+};
 
+const calculateBasePriceAndVAT = function(priceIncludingVAT, VATPercentage) {
+    const basePrice = calculateBasePrice(priceIncludingVAT, VATPercentage);
+    const VAT = priceIncludingVAT - basePrice;
+    return [basePrice, VAT];
+};
+
+console.log(calculateBasePriceAndVAT(1210, 21)); // [1000, 210]
+console.log(calculateBasePriceAndVAT(2.18, 9)); // [2, 0.18]
 
 
 /*------------------------------------------------------------------------------------------------------------------
