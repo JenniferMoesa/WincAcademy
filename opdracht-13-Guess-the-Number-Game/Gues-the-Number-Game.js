@@ -18,3 +18,4 @@ Als gebruiker wil ik een bericht ontvangen als ik het nummer goed heb geraden. e
 
 Als gebruiker wil ik een bericht zien als het spel af is. "e.g: Dag [naam]. Tot de volgende keer"*/
 
+
