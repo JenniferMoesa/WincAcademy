@@ -6,3 +6,25 @@ Verander de naam van de functie van changeColor naar toggleColor
 In plaats van het toevoegen van een extra class "red-background" aan de classlist gaan we de class togglen.
 Gebruik Google om erachter te komen hoe je dit doet. Hint: toggle.
 */
+
+const attachEventToAlertButton = function() {
+    const alertButton = document.getElementById("alert-button");
+    alertButton.addEventListener("click", function() {
+        alert("Hello World!");
+    });
+};
+
+const toggleColor = function() {
+    const bodyElement = document.body;
+    bodyElement.classList.toggle("red-background");
+};
+
+const attachEventToChangeColorButton = function() {
+    const changeColorButton = document.getElementById("change-background-button");
+    changeColorButton.addEventListener("click", function() {
+        toggleColor();
+    });
+};
+
+attachEventToAlertButton();
+attachEventToChangeColorButton();
