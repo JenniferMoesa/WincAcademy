@@ -22,3 +22,10 @@ Na de click op de button ziet de class van je body tag er zo uit: class="blue-ba
 Door de volgorde van de CSS in de CSS file, zal de laatste stijl in je stylesheet toegepast.
 In dit geval staat in je stylesheet eerst de blauwe achtergrond en daarna de rode achtergrond gedefineerd.
 De body heeft nu 2 styles, waarvan de rode achtergrond nu toegepast zal worden. */
+
+.blue-background {
+  background-color: blue;
+}
+.red-background {
+  background-color: red;
+}
